@@ -1,0 +1,415 @@
+*, :after, :before
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+body
+    font-size: 14px
+    font-weight: 400
+    font-family: 'Roboto Condensed', sans-serif
+
+    .header-inner
+        max-width: 1600px
+        margin: 0 auto
+        width: 100%
+        padding: 0px 50px
+
+    .content-inner
+        max-width: 1600px
+        margin: 0 auto
+        width: 100%
+        padding: 0px 100px
+
+    .content-right
+        max-width: 1600px
+        margin: 0 auto
+        width: 100%
+        padding: 0px 0px 0px 100px
+
+    .super-title
+        font-weight: 700
+        font-size: 50px
+        line-height: 56px
+
+        color: #161616
+
+    .title
+        font-size: 35px
+        font-weight: bold
+        line-height: 43px
+        width: 578px
+
+        color: #000000
+
+    .description
+        margin-top: 20px
+
+        font-size: 18px
+        font-weight: 400
+        line-height: 24px
+
+        color: #161616
+
+    .enum
+        border-radius: 5px
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05)
+
+    a
+        text-decoration: none
+        color: #7D7D7D
+        transition: all .2s
+
+
+    h3
+        font-size: 14px
+
+    span
+        margin-left: 4px
+        font-weight: 600
+
+    section
+        margin-top: 10px
+
+    button
+        margin-top: 35px
+
+        cursor: pointer
+        outline: 0
+        border: 0
+
+        background: #C30028
+        border-radius: 5px
+        box-shadow: 0px 17px 25px 2px rgba(195,0,40,0.35)
+        padding: 20px 40px
+
+        a
+            text-decoration: none
+            font-size: 18px
+            line-height: 22px
+
+            letter-spacing: 0.05em
+
+            color: #FFFFFF
+
+    .active a
+        color: #C30028
+
+    .header
+        display: flex
+        flex-direction: column
+        width: 100%
+
+        .header__top
+            width: 100%
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+
+            .header__logo
+            .header__info
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+
+                .header__contacts
+                    display: flex
+                    justify-content: flex-end
+
+                    .header__contact
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        margin-right: 80px
+
+                        img
+                            height: 18px
+                            width: 18px
+                            margin-right: 10px
+
+                        &:last-child
+                            margin-right: 0px
+
+                .navigation
+                    display: flex
+                    justify-content: flex-end
+                    .navigation__menu
+                        .header__item
+                            display: inline
+                            list-style: none
+                            margin-right: 50px
+
+                            &:last-child
+                                margin-right: 0px
+
+        .services
+            display: flex
+            list-style: none
+            margin: 35px 0px 0px 0px
+            padding: 0px 0px 0px 0px
+
+            .service__item
+                display: flex
+                align-items: center
+
+                height: 60px
+                width: 100%
+                padding: 0px 15px
+                margin-left: 5px
+
+                transition: all .2s
+
+                &:hover
+                    background:#C30028
+
+                    a
+                        color: #ffffff
+
+                &:first-child
+                    margin-left: 0px
+
+                .service-logo
+                    margin-right: 8px
+
+    .banner
+        .content
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+
+            .content-inner
+                padding: 0px 0px
+
+                .video-review
+                    display: flex
+                    align-items: center
+                    margin-top: 140px
+
+                    .view__title
+                        font-weight: 600
+                        font-size: 16px
+                        margin-left: 13px
+
+                        color: #C30028
+
+    .why-we
+        width: 522px
+
+    .advantages__list
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 13px
+
+        .advantage__item
+            padding: 30px
+
+            .advantage__desc
+                font-weight: 600
+                font-size: 16px
+                line-height: 22px
+
+                color: #000000
+
+    .details
+        margin: 140px 0px
+
+        .details__content
+            display: grid
+            grid-template-columns: 578px 1fr
+            grid-column-gap: 60px
+
+            .swiper-container
+                width: 100%
+
+                .swiper-button-next, .swiper-button-prev
+                    border-radius: 100%
+                    width: 45px
+                    color: #C30028
+                    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.14)
+
+                    &::after
+                        font-size: 15px
+
+                .swiper-wrapper
+                    padding: 10px 70px
+
+                .swiper-slide
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+
+                    max-width: 300px
+                    min-height: 460px
+                    padding: 20px 40px
+
+                    .service-header
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-between
+                        align-items: center
+
+                        .service-img
+                            height: 80px
+                            width: 80px
+
+                        .service-digit
+                            font-weight: 900
+                            font-size: 58px
+                            line-height: 84px
+
+                            color: #ECECEC
+
+                    .service-title
+                        font-weight: 600
+                        font-size: 30px
+                        line-height: 29px
+                    .attributes
+                        font-size: 14px
+                        line-height: 20px
+                        color: #919191
+
+                        span
+                            font-size: 14px
+                            line-height: 20px
+                            color: #000000
+                    .services__list
+                        list-style: none
+                        margin: 0 -23px
+
+                        .services__item
+                            font-size: 14px
+                            line-height: 20px
+                            color: #000000
+
+                    .about-service
+                        font-size: 14px
+                        line-height: 20px
+                        font-weight: 600
+
+                        transition: all .5s
+
+                        &:hover
+                            text-decoration: underline
+                            margin-left: 5px
+                        a
+                            color: #C30028
+                            &::after
+                                content: '>'
+                                margin-left: 7px
+
+    .bid
+        background: linear-gradient(90deg, #C30028 0%, #AF3545 100%)
+
+        .wrapper
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+        .bid__text
+            display: flex
+            flex-direction: column
+            padding: 92px 0px
+
+            .title
+                width: 400px
+                color: #ffffff
+
+            .description
+                width: 530px
+                color: #ffffff
+
+    .testimonials
+        margin-top: 0px
+        background: #FAFAFA
+
+        .title
+            padding: 120px 0px 50px 0px
+
+        .swiper-container
+            height: 500px
+
+            .swiper-wrapper
+
+                .swiper-slide
+
+                    .swiper__image
+
+
+    .questions
+        padding-top: 100px
+
+        .faq
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+            margin-top: 40px
+
+            .first-col-questions
+                margin-right: 50px
+            .first-col-questions, .second-col-questions
+                width: 100%
+
+                .ac
+                    border: 0
+                    border-top: 2px solid #F1F1F1
+
+                    .ac-q
+                        outline: 0
+                        &:after
+                            color: #C30028;
+
+        button
+            display: block;
+            margin: 45px auto 100px auto
+
+    .footer
+        padding-top: 50px
+        background: #FAFAFA
+
+        .wrapper
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+            .logo
+                display: flex
+                flex-direction: column
+
+                font-size: 12px
+                line-height: 16px
+                color: #000000
+
+                img
+                    height: 55px
+
+                .company-name
+                    text-transform: uppercase
+
+                .company-desc
+                    margin-top: -15px
+                    font-weight: 400
+
+            .submenu
+                display: flex
+                flex-direction: row
+
+                .submenu__info
+                    list-style: none
+
+                    .submenu__item
+                        font-size: 14px
+                        line-height: 19px
+
+                        width: 148px
+
+                        color: #7D7D7D
+
+        .footer__rights
+            padding: 75px 0px 25px 0px
+            font-size: 12px
+            line-height: 15px
+
+            text-align: center
+
+            color: #B1B1B1
